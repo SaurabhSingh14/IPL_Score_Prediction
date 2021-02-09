@@ -1,0 +1,74 @@
+@media (max-width:1300px){
+    .formandteam{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0px;
+        background-color: navy;
+        align-items: center;
+    }
+}
+@media (max-width:850px){
+    .iplteamsA img{
+        width: 20%;
+        padding: 0px 0px;
+        transition: .5s;
+    }
+    .iplteamsB img{
+        width: 20%;
+        padding: 0px 0px;
+        transition: .5s;
+        overflow: hidden;
+    }
+    .title div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title div img{
+        width: 30%;
+        padding: 0px 0px;
+        filter: brightness(0) invert(1);
+    }
+}
+@media (max-width:390px){
+    .form-fill input{
+        text-align: inherit;
+        display: block;
+        width: 100%;
+        padding: 1px;
+        margin: 11px auto;
+        font-size: 20px;
+        font-family: cursive;
+        background-color: white;
+        outline: none;
+        overflow: hidden;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        margin: 20px auto;
+        font-size: larger;
+        font-weight: bold;
+        font-family: cursive;
+        background-color: white;
+    }
+    .form-fill select{
+        text-align: inherit;
+        display: block;
+        width: 100%;
+        padding: 1px;
+        margin: 11px auto;
+        font-size: 20px;
+        font-family: cursive;
+        background-color: white;
+        outline: none;
+        overflow: hidden;
+    }
+    .title h1{
+        color: cyan;
+        font-size: 2rem;
+        font-family: serif;
+        text-decoration: underline;
+    }
+}

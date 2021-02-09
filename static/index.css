@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background-color: #110808;
+    padding: 20px 0px;
+}
+.title h1{
+    color: cyan;
+    font-size: 3rem;
+    font-family: serif;
+    text-decoration: underline;
+}
+.title div{
+    display: flex;
+    justify-content: center;
+}
+.title div img{
+    width: 10%;
+    padding: 0px 24px;
+    filter: brightness(0) invert(1);
+}
+.iplteamsA{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.iplteamsB{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.iplteamsA img{
+    width: 20%;
+    height: 10%;
+    padding: 0px 13px;
+    transition: .5s;
+}
+.iplteamsB img{
+    width: 14%;
+    padding: 0px 50px;
+    transition: .5s;
+    overflow: hidden;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+#kkr{
+    height: 168px;
+}
+#csk{
+    height: 162px;
+}
+#pun{
+    height: 162px;
+}
+#rr{
+    height: 162px;
+}
+#srh{
+    height: 138px;
+}
+#rcb{
+    height: 160px;
+}
+#dd{
+    height: 128px;
+}
+#mi{
+    height: 140px;
+}
+img:hover{
+    transform: rotate(360deg);
+}
+.formandteam{
+    display: flex;
+    padding: 15px 0px;
+    background-color: navy;
+}
+.form{
+    padding: 0px 40px;
+    overflow: hidden;
+}
+.form_head{
+  font-size: 39px;
+  color: yellow;
+  text-align: center;
+}
+.form-fill select{
+    text-align: inherit;
+    display: block;
+    width: 384px;
+    padding: 1px;
+    margin: 11px auto;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: white;
+    outline: none;
+    overflow: hidden;
+}
+.form-fill input{
+    text-align: inherit;
+    display: block;
+    width: 384px;
+    padding: 1px;
+    margin: 11px auto;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: white;
+    outline: none;
+    overflow: hidden;
+}
+.btn {
+    display: block;
+    cursor: pointer;
+    width: 384px;
+    margin: 20px auto;
+    font-size: larger;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: white;
+}
+.btn:hover{
+    background-color: pink;
+}
+.image img{
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: .5s;
+}
+.image img:hover{
+  box-shadow: 0 15px 70px white;
+  transform: scale(0.8);
+}
+.contact{
+    text-align: center;
+    padding: 11px 0px;
+    background-color: #110808;
+    width: auto;
+  }
+.contact h2{
+      color: pink;
+      font-size: 50px;
+      padding: 12px 0px;
+  }
+.contact i{
+      cursor: pointer;
+      color: cyan;
+      padding: 5px 24px;
+      transition: .5s;
+  }
+.contact i:hover{
+      color: pink;
+      transform: translateY(-7px);
+  }
+.contact p{
+      color: pink;
+      font-size: 20px;
+  }

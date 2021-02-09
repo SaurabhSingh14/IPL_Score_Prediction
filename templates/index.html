@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="{{ url_for('static', filename='index_res.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IPL Score Prediction</title>
+</head>
+<body>
+    <header class="title">
+        <div>
+            <img src="{{url_for('static', filename='PngItem_1270089.png')}}" alt="ipl_logo">
+            <h1>IPL SCORE</h1>
+            <h1>&nbsp;PREDICTIONS</h1>
+        </div>
+    </header>
+    <div class="iplteamsA">
+        <div class="logo">
+            <img id="mi" src="{{url_for('static', filename='Mumbai-Indians-Logo-PNG.png')}}" alt="MI">
+            <img id="csk" src="{{url_for('static', filename='Chennai-Super-Kings-Logo-PNG.png')}}" alt="CSK">
+            <img id="rcb" src="{{url_for('static', filename='Royal-Challengers-Bangalore-Logo-PNG.png')}}" alt="rcb">
+            <img id="dd" src="{{url_for('static', filename='Delhi-Daredevils-Logo-PNG.png')}}" alt="dc">
+        </div>
+    </div>
+    <section class="formandteam">
+        <div class="form">
+            <h3 class="form_head">Enter the details to predict the score.</h3>
+            <form method="POST">
+                <div class="form-fill">
+                    <select class="form-fill" name="batteam">
+                        <option value="none">Select a Batting team</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                    </select>
+                </div>
+                <div class="form-fill">
+                    <select class="form-fill" name="bowlteam">
+                        <option value="none">Select a Bowling team</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Delhi Capitals">Delhi Capitals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                    </select>
+                </div>
+                <div class="form-fill">
+                    <input type="text" name="overs" placeholder="Overs greater than 5 overs">
+                </div>
+                <div class="form-fill">
+                    <input type="text" name="runs" placeholder="Total runs till now">
+                </div>
+                <div class="form-fill">
+                    <input type="text" name="wickets" placeholder="Total wickets till now">
+                </div>
+                <div class="form-fill">
+                    <input type="text" name="run_5" placeholder="Run in last 5 overs">
+                </div>
+                <div class="form-fill">
+                    <input type="text" name="wickets_5" placeholder="Wickets in last 5 overs">
+                </div>
+                <button class="btn">Predict</button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="{{url_for('static', filename='Ipl-Captains.jpg')}}" alt="ipl-captains">   
+        </div>
+    </section>
+    <div class="iplteamsB">
+        <div class="logo">
+            <img id="pun" src="{{url_for('static', filename='Kings-XI-Punjab-Logo-PNG.png')}}" alt="punjab">
+            <img id="kkr" src="{{url_for('static', filename='Kolkata-Knight-Riders-Logo-PNG.png')}}" alt="kkr">
+            <img id="srh" src="{{url_for('static', filename='Sunrisers-Hyderabad-Logo-PNG.png')}}" alt="srh">
+            <img id="rr" src="{{url_for('static', filename='Rajasthan-Royals-Logo-PNG.png')}}" alt="rr">
+        </div>
+    </div>
+</body>
+<footer class="contact">
+    <h2>Contact Us.</h2>
+    <a href="https://github.com/SaurabhSingh14" target="_blank"><i class="fa fa-github fa-2x"
+            aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/saurabh-singh-a70876205/" target="_blank"><i class="fa fa-linkedin fa-2x"
+            aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/saurabh_singh.14/" target="_blank"><i class="fa fa-instagram fa-2x"
+            aria-hidden="true"></i></a>
+    <p>Created and Designed by Saurabh Singh</p>
+    <p>Copyright © 2020-2021 by XPenSick Lim.</p>
+</footer>
+</html>

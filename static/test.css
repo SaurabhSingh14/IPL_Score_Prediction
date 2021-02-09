@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #313131;
+}
+.slider{
+    width: 800px;
+    height: 400px;
+    background: url(../static/rcb.jpg);
+    margin: 100px auto;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    12.5%{
+        background: url(../static/csk.jpg);
+    }
+    25%{
+        background: url(../static/mi.jpg);
+    }
+    37.5%{
+        background: url(../static/rr.jpg);
+    }
+    50%{
+        background: url(../static/punjab.jpg);
+    }
+    62.5%{
+        background: url(../static/dcp.jpg);
+    }
+    75%{
+        background: url(../static/kkr.jpg);
+    }
+    87.5%{
+        background: url(../static/srh.jpg);
+    }
+    100%{
+        background: url(../static/rcb.jpg);
+    }
+}
